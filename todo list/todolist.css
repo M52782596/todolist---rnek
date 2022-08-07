@@ -1,0 +1,105 @@
+:root{
+    font-family: 'Open Sans', sans-serif;
+    --main-color:rgba(38, 142, 211, 0.5);
+    --main-color-light:rgba(93, 173, 226,0.2);
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-image:linear-gradient(to bottom right, var( --main-color), var( --main-color-light));
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+.main-title {
+    font-size:2rem;
+}
+.header,.form-group{
+    min-height: 20vh;
+  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-gorev{
+  width:80vh;
+}
+.form-item{
+
+    padding:.5rem;
+  
+    font-size:1.5rem;
+    outline: none;
+    background-color: white;
+    border:none;
+}
+.btnekle{
+    background-color:cornflowerblue;
+    color:white;
+    transition: 0.8s ease-in-out;
+   cursor: pointer;
+}
+.btnekle:hover{
+    background-color: aliceblue;
+    color:cornflowerblue;
+    transition: 0.8s ease-in-out ;
+}
+.list-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.todolist{
+    list-style:none;
+    min-width:50%;
+ 
+}
+.list{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:.2rem;
+    background-color: white;
+    transition: .5s ease-in-out;
+  
+}
+.list-item{
+    flex:1;
+  
+    font-size: 1.2rem;
+    border-radius:5%;
+    padding:.2rem;
+  
+}
+.todo-btn{
+    background-color: rgb(245, 197, 138);
+    
+    outline:none;
+    border:none;
+   font-size:1.2rem;
+   padding:.8rem;
+
+}
+.btn-not-delete{
+    background-color: red;
+    color:white;
+    cursor:pointer;
+  
+}
+.btn-not-check{
+    color:green;
+    cursor:pointer;
+}
+.not-check{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.Remove{
+transform:scale(0);
+}
+.far{
+    pointer-events: none;
+}
